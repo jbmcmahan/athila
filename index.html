@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Coffee - Artisan Selection</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #ffffff;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #f0c744 100%);
+            padding: 60px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(240, 199, 68, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(42, 82, 152, 0.1) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+            font-size: 48px;
+            color: #ffffff;
+            margin-bottom: 10px;
+            font-weight: 300;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .tagline {
+            font-size: 18px;
+            color: #f0c744;
+            font-style: italic;
+            font-weight: 300;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .intro p {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #555;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .coffee-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .coffee-card {
+            background: white;
+            border: 2px solid #f0c744;
+            border-radius: 8px;
+            padding: 30px;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .coffee-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(42, 82, 152, 0.15);
+            border-color: #2a5298;
+        }
+
+        .coffee-name {
+            font-size: 24px;
+            color: #2a5298;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .coffee-origin {
+            font-size: 14px;
+            color: #f0c744;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 500;
+        }
+
+        .coffee-description {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            min-height: 60px;
+        }
+
+        .coffee-details {
+            display: flex;
+            justify-content: space-around;
+            padding-top: 20px;
+            border-top: 1px solid #f0c744;
+            margin-bottom: 20px;
+        }
+
+        .detail {
+            font-size: 13px;
+        }
+
+        .detail-label {
+            color: #f0c744;
+            font-weight: 600;
+            display: block;
+            margin-bottom: 3px;
+        }
+
+        .detail-value {
+            color: #2a5298;
+            font-weight: 500;
+        }
+
+        .price {
+            font-size: 20px;
+            color: #2a5298;
+            font-weight: 600;
+            margin: 15px 0;
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #2a5298 0%, #f0c744 100%);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(42, 82, 152, 0.3);
+        }
+
+        footer {
+            background-color: #2a5298;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 60px;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #f0c744;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>☕ PREMIUM COFFEE</h1>
+            <p class="tagline">Handpicked, Ethically Sourced, Expertly Roasted</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro">
+            <p>Discover our curated selection of single-origin coffees from around the world. Each bean is carefully sourced and roasted to perfection, bringing out the unique flavor profile of its origin.</p>
+        </section>
+
+        <section class="coffee-grid">
+            <div class="coffee-card">
+                <div class="coffee-name">Ethiopian Yirgacheffe</div>
+                <div class="coffee-origin">Ethiopia</div>
+                <div class="coffee-description">Bright and floral with notes of blueberry and jasmine. A light roast that highlights the unique terroir of the Yirgacheffe region.</div>
+                <div class="coffee-details">
+                    <div class="detail">
+                        <span class="detail-label">Roast</span>
+                        <span class="detail-value">Light</span>
+                    </div>
+                    <div class="detail">
+                        <span class="detail-label">Body</span>
+                        <span class="detail-value">Delicate</span>
+                    </div>
+                </div>
+                <div class="price">$16.99 / 12oz</div>
+                <button class="btn">Add to Cart</button>
+            </div>
+
+            <div class="coffee-card">
+                <div class="coffee-name">Colombian Geisha</div>
+                <div class="coffee-origin">Colombia</div>
+                <div class="coffee-description">Smooth and balanced with chocolate undertones and a hint of caramel sweetness. A medium roast with full body and remarkable complexity.</div>
+                <div class="coffee-details">
+                    <div class="detail">
+                        <span class="detail-label">Roast</span>
+                        <span class="detail-value">Medium</span>
+                    </div>
+                    <div class="detail">
+                        <span class="detail-label">Body</span>
+                        <span class="detail-value">Full</span>
+                    </div>
+                </div>
+                <div class="price">$18.99 / 12oz</div>
+                <button class="btn">Add to Cart</button>
+            </div>
+
+            <div class="coffee-card">
+                <div class="coffee-name">Kenyan AA Grade</div>
+                <div class="coffee-origin">Kenya</div>
+                <div class="coffee-description">Boldly fruity with hints of blackcurrant and citrus. Dark roasted for those who appreciate a robust cup with deep, complex flavors.</div>
+                <div class="coffee-details">
+                    <div class="detail">
+                        <span class="detail-label">Roast</span>
+                        <span class="detail-value">Dark</span>
+                    </div>
+                    <div class="detail">
+                        <span class="detail-label">Body</span>
+                        <span class="detail-value">Bold</span>
+                    </div>
+                </div>
+                <div class="price">$17.99 / 12oz</div>
+                <button class="btn">Add to Cart</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Premium Coffee Co. | Crafted with care | <a href="mailto:hello@premiumcoffee.com">Contact Us</a></p>
+    </footer>
+</body>
+</html>
