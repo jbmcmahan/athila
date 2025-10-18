@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Premium Coffee - Artisan Selection</title>
+    <title>Athila Coffee</title>
     <style>
         * {
             margin: 0;
@@ -12,30 +12,30 @@
         }
 
         body {
-            font-family: 'Georgia', serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
             background-color: #ffffff;
             color: #333;
         }
 
         header {
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #f0c744 100%);
-            padding: 60px 20px;
+            background-color: #2a5298;
+            padding: 50px 20px;
             text-align: center;
             position: relative;
-            overflow: hidden;
+            overflow: visible;
         }
 
-        header::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: 
-                radial-gradient(circle at 20% 50%, rgba(240, 199, 68, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 80% 80%, rgba(42, 82, 152, 0.1) 0%, transparent 50%);
-            pointer-events: none;
+        .header-design {
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 120px;
+        }
+
+        svg {
+            width: 280px;
+            height: 120px;
         }
 
         .header-content {
@@ -47,16 +47,15 @@
             font-size: 48px;
             color: #ffffff;
             margin-bottom: 10px;
-            font-weight: 300;
-            letter-spacing: 2px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            font-weight: 700;
+            letter-spacing: 1px;
         }
 
         .tagline {
-            font-size: 18px;
+            font-size: 16px;
             color: #f0c744;
-            font-style: italic;
-            font-weight: 300;
+            font-style: normal;
+            font-weight: 400;
         }
 
         main {
@@ -197,8 +196,9 @@
 </head>
 <body>
     <header>
+
         <div class="header-content">
-            <h1>☕ PREMIUM COFFEE</h1>
+            <h1>ATHILA COFFEE</h1>
             <p class="tagline">Handpicked, Ethically Sourced, Expertly Roasted</p>
         </div>
     </header>
@@ -210,7 +210,7 @@
 
         <section class="coffee-grid">
             <div class="coffee-card">
-                <div class="coffee-name">Ethiopian Yirgacheffe</div>
+                <div class="coffee-name">Halo Beriti</div>
                 <div class="coffee-origin">Ethiopia</div>
                 <div class="coffee-description">Bright and floral with notes of blueberry and jasmine. A light roast that highlights the unique terroir of the Yirgacheffe region.</div>
                 <div class="coffee-details">
@@ -223,13 +223,12 @@
                         <span class="detail-value">Delicate</span>
                     </div>
                 </div>
-                <div class="price">$16.99 / 12oz</div>
-                <button class="btn">Add to Cart</button>
+                <div class="price">$20 / 12oz</div>
             </div>
 
             <div class="coffee-card">
-                <div class="coffee-name">Colombian Geisha</div>
-                <div class="coffee-origin">Colombia</div>
+                <div class="coffee-name">Paksong Hills</div>
+                <div class="coffee-origin">Laos</div>
                 <div class="coffee-description">Smooth and balanced with chocolate undertones and a hint of caramel sweetness. A medium roast with full body and remarkable complexity.</div>
                 <div class="coffee-details">
                     <div class="detail">
@@ -241,13 +240,12 @@
                         <span class="detail-value">Full</span>
                     </div>
                 </div>
-                <div class="price">$18.99 / 12oz</div>
-                <button class="btn">Add to Cart</button>
+                <div class="price">$20 / 12oz</div>
             </div>
 
             <div class="coffee-card">
-                <div class="coffee-name">Kenyan AA Grade</div>
-                <div class="coffee-origin">Kenya</div>
+                <div class="coffee-name">Kiganda Murambi</div>
+                <div class="coffee-origin">Burundi</div>
                 <div class="coffee-description">Boldly fruity with hints of blackcurrant and citrus. Dark roasted for those who appreciate a robust cup with deep, complex flavors.</div>
                 <div class="coffee-details">
                     <div class="detail">
@@ -259,8 +257,23 @@
                         <span class="detail-value">Bold</span>
                     </div>
                 </div>
-                <div class="price">$17.99 / 12oz</div>
-                <button class="btn">Add to Cart</button>
+                <div class="price">$20 / 12oz</div>
+            </div>
+            <div class="coffee-card">
+                <div class="coffee-name">Decaf Samaria Farm</div>
+                <div class="coffee-origin">Columbia</div>
+                <div class="coffee-description">Caramel notes, banana bread with walnuts, brown sugar, malty accents.</div>
+                <div class="coffee-details">
+                    <div class="detail">
+                        <span class="detail-label">Roast</span>
+                        <span class="detail-value">Medium</span>
+                    </div>
+                    <div class="detail">
+                        <span class="detail-label">Body</span>
+                        <span class="detail-value">Delicate</span>
+                    </div>
+                </div>
+                <div class="price">$20 / 12oz</div>
             </div>
         </section>
     </main>
